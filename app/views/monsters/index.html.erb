@@ -1,11 +1,11 @@
-<h1>Monstruos </h1>
+<h1>Monstruos ficticio</h1>
 <% @monsters.each do |monster| %>
     <li>
     <ol class="elemento"><%= link_to monster.name, monster %>
     <% if (monster.tweets.count>2) %>
         <p class="destacado"> <%="Twittero destacado" %> </p>
     <%end%>
-    
+
     <br>
     </ol>
     </li>
